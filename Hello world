@@ -71,3 +71,25 @@ public class BankAccount {
 }
 
 // 설명) transfer 메소드는 파라미터를 2개 받음.  받는 사람, 이체 금액
+
+
+
+
+
+///////////////////////////
+// < Instance 정리 >
+
+// Class => 설계도 
+// Instance => 객체
+
+// EX 예시 1)  TEST를 위해서 BankDriver.java 파일 생성
+public class BankDriver {
+    public static void main(String[] args) {
+        // 사람 선언 // Person Instance 생성
+        Person p1 = new Person();
+    }
+}
+
+// 설명) 실제로 Person Instance를 만들기 위해서는 '생성자'를 써야함.  생성자 => 'Instance를 생성하는 Method' 
+//       생성자는 new 키워드와 함께 Class의 이름을 써주면 됨.
+//       p1에는 Person Instance가 저장됨.
