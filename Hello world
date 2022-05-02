@@ -9,7 +9,7 @@ public class HelloWorld {
 // 자바 프로그램을 실행하면 가장 먼저 main을 찾아서 실행함. main이라는 단어는 모든 자바프로그램에 항상 포함되어있음. 우리가 실행하고 싶은 자바코드가 있다면 main 안에 넣어주면 됨. 
 
 // static : 바로 실행하게 만들어줌. main이 가장 첫번째로 실행되어야 하기 때문에, main 앞에는 항상 static을 붙이게 됨.
-// void : 리턴 값 없음. 메인 메소드는 보통 아무것도 되돌려주지 않기때문에 void를 앞에 붙임.
+// void : 리턴 값 없음. 메인 메소드는 보통 아무것도 되돌려주지 않기 때문에 void를 앞에 붙임.
 
 // String[] args : ()괄호 안에 있다는 것은 '메소드에 전달되는 값'이라는 의미.
 // String[]은 문자열을 의미, args는 변수 이름. 즉 args라는 문자열변수가 메소드에 전달됨.
@@ -23,5 +23,51 @@ public class HelloWorld {
 아무 것도 되돌려주지 않음. (void)
 나중에 main 메소드에 전달해주고 싶은 값이 있다면, 
 문자열 형태로 전달해야 하며, 
-main 메소드 안에서 'args' 라는 이름으로 사용할 수 있음.
+main 메소드 안에서 'args' 라는 이름으로 사용할 수 있음 (?).
 */
+
+
+
+
+///////////////////////////
+// < Method Basic Syntax >
+
+
+// EX 예시 1)
+int sum(int x, int y) {
+    return x + y;
+}
+
+// sum이라는 메소드 사용. sun이라는 함수는, 파라미터로 정수형 x와 정수형 y를 받음.
+// 그리고 이 메소드는 꼭 정수형을 리턴해야함.
+// 리턴값이 없으면 자료형 대신 void라고 써주면 됨* --> ex) public static void main(String[] args)  main함수도 리턴값이 없을때 앞에 void를 써줌.
+
+
+
+
+// EX 예시 2) 은행계좌
+public class BankAccount {
+    int balance;
+    Person owner;
+    
+    // Parameter : 입금 액수
+    // Return 값 : 성공 여부 (boolean)
+    boolean deposit(int amount) {
+
+    }
+
+    // Parameter : 출금 액수
+    // Return 값 : 성공 여부 (boolean)
+    boolean withdraw(int amount) {
+
+    }
+
+    // First Parameter : 받는 사람 (Person)
+    // Second Parameter : 이체 금액 (Integer)
+    // Return 값 : 성공 여부 (boolean)
+    boolean transfer(Person to, int amount) {
+
+    }
+}
+
+// 설명) transfer 메소드는 파라미터를 2개 받음.  받는 사람, 이체 금액
